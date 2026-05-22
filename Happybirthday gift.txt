@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Box Click</title>
+    <style>
+        .gift-box {
+            width: 100px;
+            height: 100px;
+            background-color: #FFD700;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 16px;
+            color: white;
+        }
+        .hidden-message {
+            display: none;
+            font-size: 18px;
+            margin-top: 20px;
+            color: #2C3E50;
+        }
+    </style>
+</head>
+<body>
+    <div class="gift-box" onclick="openGift()">
+        🎁 Click Me
+    </div>
+
+    <div id="message" class="hidden-message">
+        April Fool
+    </div>
+
+    <script>
+        function openGift() {
+            document.getElementById("message").style.display = "block";
+        }
+    </script>
+</body>
+</html>
